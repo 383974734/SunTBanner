@@ -67,7 +67,7 @@
 - (void) settingData {
     
     if (self.isLoadNetworkImage) {
-        [self.imageView sd_setImageWithURL:[NSURL URLWithString:self.imageName] placeholderImage:nil];
+        [self.imageView sd_setImageWithURL:[NSURL URLWithString:self.imageName] placeholderImage:[UIImage imageNamed:@"placeholderImage"]];
     } else {
         self.imageView.image = [UIImage imageNamed:self.imageName];
     }
